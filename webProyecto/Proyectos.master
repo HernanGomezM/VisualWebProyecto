@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Proyectos.master.cs" Inherits="Proyectos" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Proyecto</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="Estilos/Estilo.css" />
+    <style type="text/css">
+        .borde {
+            height: 122px;
+        }
+        .auto-style2 {
+            width: 131px;
+        }
+        .auto-style3 {
+            width: 131px;
+            height: 48px;
+        }
+        .auto-style4 {
+            height: 48px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="borde">
+        <div style="height: 150px">
+          
+            <asp:Image ID="Image1" runat="server" Height="116px" ImageUrl="~/Imagenes/Color-Squares-Website-Banner-.jpg" Width="1022px" />
+          
+        </div>
+        <div style="height: 50px">
+            
+            
+            
+        </div>
+        
+        <div style="height: 800px">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <table style="width:100%;">
+                    <tr>
+                        <td class="auto-style3">Proyectos ADSI</td>
+                        <td class="auto-style4">
+                            <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal">
+                                <Items>
+                                    <asp:MenuItem NavigateUrl="~/index.aspx" Text="INICIO" Value="INICIO"></asp:MenuItem>
+                                    <asp:MenuItem Text="EMPLEADOS" Value="EMPLEADOS">
+                                        <asp:MenuItem NavigateUrl="~/Formularios/RegistroEmp.aspx" Text="Registro" Value="Registro"></asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/Formularios/ListarEmp.aspx" Text="Listar" Value="Listar"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                </Items>
+                            </asp:Menu>
+                        </td>
+                        <td class="auto-style4">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style2">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style2">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

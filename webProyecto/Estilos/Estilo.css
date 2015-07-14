@@ -1,0 +1,31 @@
+﻿.borde
+{
+    
+
+      /*borde redondeado solo mozilla y chrome los demas cuadrado*/
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+     
+     /* centrar pagina */ 
+        margin-left: auto; 
+        margin-right: auto;
+ 
+     /*tamaño*/
+      width: 1024px; 
+      height: 1000px; 
+      
+      /*borde con sombra*/
+      -webkit-box-shadow: 3px 3px 50px #999;
+      -moz-box-shadow: 3px 3px 50px #999;
+       background-color: #F8F8F8;
+  
+       /*tipo borde color*/
+        border: thin solid #0099FF; 
+        background-color:#e4e8ee;
+       
+ }  
+ 
+ body
+ {
+     background-color:#9CAAC1;
+ }
