@@ -9,9 +9,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div style="height: 282px; width: 525px; top: 118px; left: 182px; position: absolute">
+    <div style="height: 282px; width: 525px; top: 58px; left: 15px; position: absolute">
     
-        <asp:GridView ID="gvDatos" runat="server" Height="197px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="311px">
+        <asp:GridView ID="gvDatos" runat="server" Height="197px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="311px" style="top: 51px; left: 108px; position: absolute">
         </asp:GridView>
     
     </div>
